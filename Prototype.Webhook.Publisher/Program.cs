@@ -1,15 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Microsoft.AspNet.WebHooks.Diagnostics;
+using Microsoft.Owin.Hosting;
 
-namespace Prototype.Webhook.Publisher
+namespace Prototype.WebHook.Publisher
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
+            var localAddress = "http://localhost:9000";
+            SingletonSender.Instance.SetSender(new CustomSender(new TraceLogger()));
+            using (WebApp.Start<SwaggerConfig>(localAddress))
+            {
+                Console.WriteLine($"{nameof(Publisher)} running on {localAddress}");
+                Console.ReadLine();
+            }
         }
     }
 }

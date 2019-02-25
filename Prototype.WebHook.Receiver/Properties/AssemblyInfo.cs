@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Prototype.WebHook.Publisher")]
+[assembly: AssemblyTitle("Prototype.WebHook.Receiver")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Prototype.WebHook.Publisher")]
+[assembly: AssemblyProduct("Prototype.WebHook.Receiver")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("fb13fc89-8953-4588-bfd5-e1864759aa46")]
+[assembly: Guid("1077f9fd-e0be-4f1e-b1de-e8e909f51b60")]
 
 // Version information for an assembly consists of the following four values:
 //
